@@ -1,16 +1,22 @@
 import Head from "next/head";
+import classes from "../../styles/single-product.module.css";
+import ImageSide from "../../components/imageSide/ImageSide";
+import DetailSide from "../../components/detailSide/DetailSide";
 import { getProduct } from "../../utils/utils";
 
 const SingleProduct = (props) => {
   return (
-    <div>
+    <div className={classes.singleProduct}>
       <Head>
         <title>{props.product.title}</title>
 
         <meta name="description" content={props.product.description} />
       </Head>
-      SingleProduct id:
-      {props.product.title}
+      <main className={classes.main}>
+        <ImageSide image={props.product.image} />
+        <DetailSide product={props.product} />
+        
+      </main>
     </div>
   );
 };

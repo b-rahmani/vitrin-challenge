@@ -1,5 +1,7 @@
 .container {
   padding: 0 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 .main {
@@ -12,7 +14,7 @@
   align-items: center;
 }
 
-.footer {
+/* .footer {
   display: flex;
   flex: 1;
   padding: 2rem 0;
@@ -39,11 +41,7 @@
   text-decoration: underline;
 }
 
-.title {
-  margin: 0;
-  line-height: 1.15;
-  font-size: 4rem;
-}
+
 
 .title,
 .description {
@@ -63,8 +61,12 @@
   font-size: 1.1rem;
   font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
     Bitstream Vera Sans Mono, Courier New, monospace;
+} */
+.title {
+  margin: 0;
+  line-height: 1.15;
+  font-size: 4rem;
 }
-
 .grid {
   display: flex;
   align-items: center;

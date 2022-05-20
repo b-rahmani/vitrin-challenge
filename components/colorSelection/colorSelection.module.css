@@ -1,0 +1,51 @@
+.colors{
+    display: flex;
+    gap: 10px;
+}
+
+.colors label{
+    width: 30px;
+    height: 30px;
+    display: block;
+    border-radius: 50%;
+    position: relative;
+    
+   
+
+}
+.colors span{
+ 
+  display: none;
+  width: 130%;
+    height: 130%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  border-radius: 50%;
+  z-index: 2;
+  background-color: transparent;
+
+  
+  
+
+}
+.radio{
+display: none;
+}
+
+.radio:checked +label >span{
+    display: block;
+   
+}
+
+
+@media  screen and (max-width: 900px) {
+     .colors{
+       
+        gap: 0;
+    }
+    /* .colors label{
+        margin-right:-5px ;
+    } */
+  } 
