@@ -3,6 +3,14 @@ import styles from "../styles/Home.module.css";
 import { getAllProduct } from "../utils/utils";
 
 const Home = (props) => {
+  if (!props.allProduct) {
+    return (
+      <div className={styles.container}>
+        <main className={styles.main}>loading data ...</main>
+      </div>
+    );
+  }
+
   return (
     <div className={styles.container}>
       <main className={styles.main}>
